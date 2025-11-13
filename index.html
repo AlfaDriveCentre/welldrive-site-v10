@@ -28,29 +28,34 @@
       </nav>
 
       <div class="nav-actions">
-        <button class="icon-button" aria-label="Dili değiştir" id="langToggle">
-          <img src="assets/SVG/flag-tr-icon.svg" alt="Türkçe" class="icon-flag" />
-          <span class="lang-label">Türkçe</span>
-          <img src="assets/SVG/arrow4-icon.svg" alt="" class="icon icon-caret" />
-        </button>
-        <div class="lang-menu" id="langMenu" aria-label="Dil seçenekleri">
-          <button class="lang-option" data-lang="tr">
-            <img src="assets/SVG/flag-tr-icon.svg" alt="Türkçe" class="icon-flag" />
-            <span>Türkçe</span>
-          </button>
-          <button class="lang-option" data-lang="en">
-            <img src="assets/SVG/flag-en-icon.svg" alt="English" class="icon-flag" />
-            <span>English</span>
-          </button>
-          <button class="lang-option" data-lang="ru">
-            <img src="assets/SVG/flag-ru-icon.svg" alt="Русский" class="icon-flag" />
-            <span>Русский</span>
-          </button>
-        </div>
-
+        <!-- Arama butonu, menü ile dil seçici arasında -->
         <button class="icon-button" aria-label="Sitede ara">
           <img src="assets/SVG/search-icon.svg" alt="" class="icon" />
         </button>
+
+        <!-- Dil seçici: globe + label + bayrak -->
+        <div class="lang-wrapper">
+          <button class="lang-toggle" id="langToggle" aria-label="Dili değiştir">
+            <img src="assets/SVG/globe-icon.svg" alt="" class="icon-globe" />
+            <span class="lang-label">Türkçe</span>
+            <img src="assets/SVG/flag-tr-icon.svg" alt="Türkçe" class="icon-flag" />
+          </button>
+
+          <div class="lang-menu" id="langMenu" aria-label="Dil seçenekleri">
+            <button class="lang-option" data-lang="tr">
+              <img src="assets/SVG/flag-tr-icon.svg" alt="Türkçe" class="icon-flag" />
+              <span>Türkçe</span>
+            </button>
+            <button class="lang-option" data-lang="en">
+              <img src="assets/SVG/flag-en-icon.svg" alt="English" class="icon-flag" />
+              <span>English</span>
+            </button>
+            <button class="lang-option" data-lang="ru">
+              <img src="assets/SVG/flag-ru-icon.svg" alt="Русский" class="icon-flag" />
+              <span>Русский</span>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </header>
