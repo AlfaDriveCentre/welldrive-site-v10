@@ -346,6 +346,81 @@ h3 {
   max-width: 260px;
 }
 
+/* ANA SAYFA ÜRÜN SATIRLARI (PDF'e göre üç kolon) */
+.product-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.9fr) auto auto;
+  column-gap: 40px;
+  align-items: center;
+}
+
+.product-text h2 {
+  font-size: 22px;
+  margin: 0 0 10px;
+}
+
+.product-text p {
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 340px;
+}
+
+.product-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.product-middle {
+  justify-self: center;
+}
+
+.product-badge {
+  max-width: 230px;
+  height: auto;
+}
+
+.product-right {
+  justify-self: end;
+}
+
+.product-drive {
+  max-width: 210px;
+  height: auto;
+}
+
+/* Uzman Ekip: iki kolonlu layout */
+.support-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.6fr);
+  column-gap: 40px;
+  align-items: center;
+}
+
+.support-text h2 {
+  font-size: 22px;
+  margin: 0 0 10px;
+}
+
+.support-text p {
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 420px;
+}
+
+.support-right {
+  justify-self: end;
+}
+
+.support-image {
+  max-width: 520px;
+  height: auto;
+}
+
+
+
+
 /* Support */
 .support-grid {
   display: grid;
