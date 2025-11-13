@@ -1,144 +1,281 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>WD750 – Kompakt ve Akıllı Frekans Konvertörü</title>
-  <meta
-    name="description"
-    content="WellDrive WD750: Genel maksatlı uygulamalar için kompakt, akıllı ve dayanıklı frekans konvertörü."
-  />
-  <link rel="stylesheet" href="/css/styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WellDrive WD750</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="container navbar-inner">
-      <div class="brand">
-        <img
-          src="/assets/1x/welldrive-logo.png"
-          srcset="/assets/2x/welldrive-logo@2x.png 2x"
-          alt="WellDrive logo"
-          class="brand-logo"
-        />
-        <a href="/">WellDrive</a>
-      </div>
-
-      <nav class="nav" id="main-nav">
-        <a href="/wd750.html">WD750</a>
-        <a href="/#wd770">WD770</a>
-        <a href="/#support">Destek</a>
-        <a href="/#contact">İletişim</a>
-      </nav>
-
-      <button class="burger" type="button" onclick="toggleNav()">
-        <span></span><span></span><span></span>
+<body class="page-wd750">
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand">
+        <img src="assets/welldrive-logo.svg" alt="WellDrive" class="brand-logo">
+      </a>
+      <button id="navToggle" class="nav-toggle" aria-label="Menüyü Aç/Kapat">
+        <img src="assets/hammenu-icon.svg" alt="" class="icon icon-menu">
+        <img src="assets/close-icon.svg" alt="" class="icon icon-close">
       </button>
+      <nav class="site-nav" aria-label="Ana menü">
+        <ul>
+          <li><a href="wd750.html" class="active">WD750</a></li>
+          <li><a href="index.html#wd770">WD770</a></li>
+          <li><a href="index.html#support">Destek</a></li>
+          <li><a href="index.html#contact">İletişim</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-button" aria-label="Sitede Ara">
+          <img src="assets/search-icon.svg" alt="" class="icon">
+        </button>
+        <button class="language-switch">
+          <img src="assets/flag-tr-icon.svg" alt="" class="icon-flag">
+          <span>Türkçe</span>
+        </button>
+      </div>
     </div>
   </header>
 
   <main>
     <!-- HERO -->
-    <section class="hero">
-      <div class="container">
-        <div class="grid">
-          <div>
-            <h1>WD750 – Kompakt ve Akıllı</h1>
-
-            <p class="lead">
-              Genel maksatlı tüm uygulamalar, ağır hizmet koşulları, geniş
-              haberleşme ve kontrol seçenekleri veya maliyet tasarrufu
-              sağlayacağınız akıllı ve kompakt çözümler için tasarlandı.
-            </p>
-
-            <div class="badges">
-              <span class="badge">AKILLI</span>
-              <span class="badge">KOMPAKT</span>
-            </div>
-
-            <div class="cta">
-              <a class="button primary" href="/#contact">Teklif İsteyin</a>
-              <a class="button" href="#downloads">Kılavuzlar</a>
-            </div>
+    <section class="section hero hero-wd750 reveal">
+      <div class="container hero-grid hero-grid-wd750">
+        <div class="hero-content">
+          <p class="eyebrow">WD750</p>
+          <h1>Kompakt Güç, Akıllı Kontrol</h1>
+          <p class="lead">
+            Küçük gövde, büyük fark. WD750, WellDrive ailesinin yeni nesil frekans konvertörüdür.
+            Güçlü donanımının dayanıklılığı, yazılım zekâsı ve enerji verimliliğiyle endüstriyel kontrol
+            dünyasında yeni bir standardı belirler.
+          </p>
+          <p>
+            Sadece bir sürücü değil; gücün kompakt hali. Her hareketin aklında WD750 var.
+          </p>
+          <div class="hero-actions">
+            <a href="index.html#contact" class="btn btn-primary">Teklif İsteyin</a>
           </div>
-
-          <figure class="figure">
-            <img
-              src="/assets/1x/welldrive-wd750-inverter.png"
-              srcset="/assets/2x/welldrive-wd750-inverter@2x.png 2x"
-              alt="WellDrive WD750 inverter"
-            />
-          </figure>
+        </div>
+        <div class="hero-media">
+          <img src="assets/wd750-keypad-hero.png" alt="WD750 keypad yakın plan" class="hero-image hero-image-keypad">
         </div>
       </div>
     </section>
 
-    <!-- ÖZELLİKLER -->
-    <section class="section">
-      <div class="container">
-        <div class="split">
-          <div>
-            <h2>Öne Çıkan Özellikler</h2>
-            <p class="sub">
-              WD750, kompakt gövdesine rağmen gelişmiş kontrol algoritmaları ve
-              zengin I/O seçenekleri ile hem enerji verimliliği hem de devreye
-              alma kolaylığı sunar.
-            </p>
-            <ul>
-              <li>Pompa, fan ve genel maksatlı uygulamalar için optimize edilmiştir.</li>
-              <li>V/F ve Sensorless Vector (SLV) kontrol modları.</li>
-              <li>Çoklu-Pompa, master–slave ve uyku/uyandırma fonksiyonları.</li>
-              <li>Modbus/RTU standart, diğer fieldbus seçenekleri opsiyoneldir.</li>
-              <li>Gelişmiş motor koruma, fren kıyıcı ve STO opsiyonları.</li>
-            </ul>
+    <!-- ALL APPLICATIONS -->
+    <section class="section section-alt reveal" id="all-applications">
+      <div class="container split-grid">
+        <div class="section-content">
+          <h2>Tüm Uygulamalar,<br><span class="accent">Tek Çözüm</span></h2>
+          <p>
+            Tek bir Frekans Konvertörü size tüm uygulamalar için ideal çözüm sağlar.
+          </p>
+          <p>
+            Vinç, ve değirmen gibi ağır şart uygulamaların yanı sıra fan, pompa, kompresör gibi normal
+            şart uygulamaları da rahatlıkla gerçekleştirebilir.
+          </p>
+          <p>
+            Açık ve kapalı çevrim çalışabilen WD750, aynı zamanda geniş haberleşme seçenekleri ve
+            üstün programlama yeteneği ile kusursuz bir konfor sağlar. Zorlu ortam koşullarına dayanıklı
+            yapısı sayesinde WD750’yi tüm uygulamalarınızda güvenle kullanabilirsiniz.
+          </p>
+          <div class="section-actions">
+            <a href="#" class="btn btn-secondary">Broşürü İnceleyin</a>
           </div>
-
-          <figure class="figure">
-            <img
-              src="/assets/1x/wd750-all-applications-image.png"
-              srcset="/assets/2x/wd750-all-applications-image@2x.png 2x"
-              alt="WD750 tüm uygulamalar görseli"
-            />
-          </figure>
+        </div>
+        <div class="section-media">
+          <img src="assets/welldrive-wd750-inverter.png" alt="WD750 frekans konvertörü" class="product-image tall">
+          <img src="assets/wd750-all-applications-image.png" alt="WD750 tüm uygulamalar görseli" class="applications-grid">
         </div>
       </div>
     </section>
 
-    <!-- İNDİRMELER -->
-    <section id="downloads" class="band">
+    <!-- HARDWARE FEATURES -->
+    <section class="section reveal" id="hardware">
       <div class="container">
-        <div class="grid">
-          <div>
-            <h2>İndirmeler</h2>
-            <p class="sub">
-              Kullanım kılavuzu, katalog, teknik dokümanlar ve uygulama notları
-              için indirme bağlantılarını burada listeleyebilirsiniz.
-            </p>
-            <div class="cta">
-              <a class="button" href="#">Kullanım Kılavuzu (PDF)</a>
-              <a class="button" href="#">Katalog (PDF)</a>
-              <a class="button" href="#">Uygulama Notları (PDF)</a>
-            </div>
-          </div>
+        <h2>Üstün Performans<br><span class="accent">Güçlü Donanım</span></h2>
+        <p class="section-intro">
+          Dayanıklılık ve güven. Bir frekans konvertöründen beklenen her şey WD750’de var.
+        </p>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <img src="assets/emc-filter-icon.png" alt="" class="feature-icon">
+            <h3>EMC Filtre</h3>
+            <p>WellDrive WD750, tüm güç aralığında dahili 2. çevre (Kategori C3) EMC filtre ile gelir.</p>
+          </article>
+          <article class="feature-card">
+            <img src="assets/cooling-icon.png" alt="" class="feature-icon">
+            <h3>Bağımsız Soğutma Kanalı</h3>
+            <p>Bağımsız kanal tasarımı ile tozun elektronik komponentlere geçmesini önler, ömrü uzatır.</p>
+          </article>
+          <article class="feature-card">
+            <img src="assets/conformal-coating-icon.png" alt="" class="feature-icon">
+            <h3>Vernikli Koruma</h3>
+            <p>Tüm elektronik komponentler IEC 60721-3-3’e göre 3C3 sınıfında verniktir.</p>
+          </article>
+          <article class="feature-card">
+            <img src="assets/expansion-icon.png" alt="" class="feature-icon">
+            <h3>Genişleme Modülleri</h3>
+            <p>Opsiyonel I/O ve haberleşme kartları ile WD750 sisteminiz için esnek uyumluluk sağlar.</p>
+          </article>
+          <article class="feature-card">
+            <img src="assets/brake-chopper-icon.png" alt="" class="feature-icon">
+            <h3>Fren Kıyıcısı</h3>
+            <p>Dahili fren kıyıcı modül ile fren direnci gerektiren uygulamaları destekler.</p>
+          </article>
+          <article class="feature-card">
+            <img src="assets/side-by-side-icon.png" alt="" class="feature-icon">
+            <h3>Boşluksuz Yanyana Montaj</h3>
+            <p>Boşluk bırakmadan yan yana montaj ile pano içinde alan tasarrufu sağlar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-          <figure class="figure">
-            <img
-              src="/assets/1x/wd750-family-photo.png"
-              srcset="/assets/2x/wd750-family-photo@2x.png 2x"
-              alt="WD750 aile görseli"
-            />
-          </figure>
+    <!-- LOADABILITY -->
+    <section class="section section-alt reveal" id="loadability">
+      <div class="container split-vertical">
+        <div class="section-content">
+          <h2>Sınırsız Güç<br><span class="accent">Yüklenebilirlik</span></h2>
+          <p class="section-intro">
+            WD750 yüklenebilirlik kapasitesi sayesinde kusursuz performans ve süreklilik sunar.
+          </p>
+          <ul class="feature-list">
+            <li><strong>Ağır Şart Kullanım:</strong> Her 5 dakikalık periyotta toplam 1 dakika boyunca nominal ağır şart çıkış akımı üzerinden %150 yüklenebilir.</li>
+            <li><strong>Normal Şart Kullanım:</strong> Her 5 dakikalık periyotta toplam 1 dakika boyunca nominal normal şart akımı üzerinden %110 yüklenebilir.</li>
+            <li><strong>Kalkış Yüklenmesi 1:</strong> Her start anında 10 saniye boyunca nominal akımın %180’ine kadar yüklenebilir.</li>
+            <li><strong>Kalkış Yüklenmesi 2:</strong> Her start anında 1 saniye boyunca nominal akımın %200’üne kadar yüklenebilir.</li>
+          </ul>
+        </div>
+        <div class="section-media">
+          <img src="assets/dual-rating-image.png" alt="Dual-Rating heavy duty ve normal duty" class="dual-rating-badge">
+          <img src="assets/vfd-overload-curve.png" alt="WD750 yüklenebilirlik eğrisi" class="overload-curve">
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTROL & COMFORT -->
+    <section class="section reveal" id="control">
+      <div class="container split-vertical">
+        <div class="section-content">
+          <h2>Konfor ve Güven<br><span class="accent">Kontrolün Gücü</span></h2>
+          <p class="section-intro">
+            Kapsamlı algoritma ve yüksek kapasite. WD750 ile hareketin kontrolü sizin elinizde.
+          </p>
+          <ul class="feature-list">
+            <li><strong>Tam Motor Desteği:</strong> Asenkron, senkron ve permanent magnet motorlarla tam uyum.</li>
+            <li><strong>Kapalı Çevrim Vektör Kontrol:</strong> Yüksek hız hassasiyeti ve optimum motor kontrolü.</li>
+            <li><strong>Gelişmiş Koruma Seçenekleri:</strong> Şebekedeki kısa süreli gerilim dalgalanmalarına karşı sistemi korur.</li>
+            <li><strong>Taşınabilir Keypad:</strong> Sökülebilir paneli Ethernet kablosu ile kolayca uzağa taşıyın.</li>
+            <li><strong>Haberleşme Seçenekleri:</strong> Profinet, EtherCAT, Modbus-TCP, BACnet ve daha fazlası.</li>
+            <li><strong>Ortak DC Bara:</strong> DC bus terminalleri üzerinden ortak DC bara paylaşımı yapılabilir.</li>
+          </ul>
+        </div>
+        <div class="section-media">
+          <img src="assets/wd750-family-photo.png" alt="WD750 ürün ailesi" class="product-family">
+        </div>
+      </div>
+    </section>
+
+    <!-- SOFTWARE FEATURES -->
+    <section class="section section-alt reveal" id="software">
+      <div class="container">
+        <h2>Kapsamlı Özellikler<br><span class="accent">Gelişmiş Yazılım</span></h2>
+        <p class="section-intro">
+          WD750 ile tanışın. Her uygulama için tek çözüm.
+        </p>
+        <div class="feature-grid feature-grid-tight">
+          <article class="feature-card">
+            <h3>Tork Kontrol</h3>
+            <p>Açık veya kapalı çevrim ile açıcı-sarıcı uygulamalarınız için ideal çözüm.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Pozisyon Kontrol</h3>
+            <p>Hareket kontrol uygulamalarında kapalı çevrim ile desteklenen ideal çözüm.</p>
+          </article>
+          <article class="feature-card">
+            <h3>PID Kontrol</h3>
+            <p>Sıcaklık, akış, basınç gibi tüm proses ihtiyaçları için esnek PID fonksiyonları.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Yangın Modu</h3>
+            <p>Tüm yangın senaryolarına uyumluluğu ile tesisinizin güvenliğinde kilit rol oynar.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Dönen Yükü Yakalama</h3>
+            <p>Ataletli yükler için dönüş hızını kontrol eder, prosesin devamlılığını sağlar.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Enerji Kesintisinde Yeniden Başlatma</h3>
+            <p>Anlık enerji kesintilerinde motoru kaldığı yerden yeniden başlatır.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Solar Pompa Kontrolü</h3>
+            <p>MPPT destekli solar pompa yazılımı ile yenilenebilir enerji kaynaklarını kullanın.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Enerji Tasarruf Modu</h3>
+            <p>Değişken momentli uygulamalarda motor mıknatıslanmasını optimize ederek tasarruf sağlar.</p>
+          </article>
+        </div>
+
+        <div class="section-actions section-actions-centered">
+          <a href="#" class="btn btn-secondary">Broşürü İnceleyin</a>
+          <a href="index.html#support" class="btn btn-primary">Destek Sayfası</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container footer-note">
-      Telif Hakkı © 2025 – Alfa Drive Centre. Tüm hakları saklıdır.
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-column">
+        <h3>Genel</h3>
+        <ul>
+          <li><a href="index.html">WellDrive</a></li>
+          <li><a href="wd750.html">WD750</a></li>
+          <li><a href="index.html#wd770">WD770</a></li>
+          <li><a href="#">Site Haritası</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Destek</h3>
+        <ul>
+          <li><a href="#">İndirme Merkezi</a></li>
+          <li><a href="#">Uygulama Merkezi</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>İletişim</h3>
+        <ul>
+          <li><a href="index.html#contact">İletişim Formu</a></li>
+          <li><a href="index.html#contact">Firmamız Hakkında</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Gizlilik</h3>
+        <ul>
+          <li><a href="#">Gizlilik Politikası</a></li>
+          <li><a href="#">Çerezlerin Kullanımı</a></li>
+          <li><a href="#">Yasal Bilgiler</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Medya</h3>
+        <ul class="social-list">
+          <li><a href="#"><span>alfa-drive-centre</span></a></li>
+          <li><a href="#"><span>alfadrivecentre</span></a></li>
+          <li><a href="#"><span>adcalfadrivecentre</span></a></li>
+          <li><a href="#"><span>alfadrivecentre</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>Telif Hakkı © 2025 - <strong>Alfa Drive Centre</strong>. Tüm hakları saklıdır.</p>
+      </div>
     </div>
   </footer>
 
-  <script src="/js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
