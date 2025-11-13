@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Bir dil seçildiğinde sadece görsel & label'ı değiştir (gerçek yönlendirme yok)
     langMenu.querySelectorAll(".lang-option").forEach(function (btn) {
       btn.addEventListener("click", function () {
-        var lang = this.getAttribute("data-lang");
         var text = this.querySelector("span").textContent;
         var img = this.querySelector("img");
         if (langLabel) langLabel.textContent = text;
