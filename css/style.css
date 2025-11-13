@@ -64,7 +64,7 @@ body {
   text-decoration: none;
   font-size: 15px;
   font-weight: 500;
-  color: #333;
+  color: #555;
   padding: 4px 0;
 }
 
@@ -76,7 +76,8 @@ body {
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
+  flex-shrink: 0;
 }
 
 .icon-button {
@@ -94,34 +95,45 @@ body {
   height: 18px;
 }
 
-.icon-flag {
+/* Dil seçici ------------------------------------------------- */
+.lang-wrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.lang-toggle {
+  border-radius: 999px;
+  border: 1px solid #e0e0e0;
+  padding: 6px 14px;
+  background: #fafafa;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  min-width: 150px; /* navbarın kaymaması için sabit genişlik */
+  justify-content: space-between;
+}
+
+.icon-globe {
   width: 18px;
   height: 18px;
 }
 
-/* Dil seçici */
-#langToggle {
-  border-radius: 999px;
-  border: 1px solid #e0e0e0;
-  padding: 4px 10px;
-  background: #fafafa;
-  gap: 6px;
+.icon-flag {
+  width: 20px;
+  height: 20px;
 }
 
 .lang-label {
   font-size: 14px;
-}
-
-.icon-caret {
-  width: 14px;
-  height: 14px;
+  white-space: nowrap;
 }
 
 /* Dil açılır menü */
 .lang-menu {
   position: absolute;
-  top: 64px;
-  right: 72px;
+  top: calc(100% + 4px);
+  right: 0;
   background: #ffffff;
   border-radius: 8px;
   border: 1px solid #e0e0e0;
@@ -129,6 +141,7 @@ body {
   padding: 6px 0;
   min-width: 150px;
   display: none;
+  z-index: 60;
 }
 
 .lang-menu.open {
@@ -206,6 +219,7 @@ body {
 
   .nav-actions {
     margin-left: auto;
+    gap: 10px;
   }
 
   .nav-toggle {
@@ -224,12 +238,6 @@ body {
   body.nav-open .icon-close {
     display: block;
   }
-
-  /* Dil menüsünü nav içine taşıyormuş gibi görünmesi için konumu biraz değiştir */
-  .lang-menu {
-    top: 60px;
-    right: 24px;
-  }
 }
 
 /* Daha küçük ekranlarda aksiyonları sadeleştir */
@@ -239,10 +247,15 @@ body {
   }
 
   .nav-actions {
-    gap: 6px;
+    gap: 8px;
   }
 
-  #langToggle .lang-label {
-    display: none;
+  .lang-toggle {
+    min-width: 0;
+    padding-inline: 10px;
+  }
+
+  .lang-label {
+    display: none; /* PDF mobilde sadece ikon+bayrak tarzı görünüme yakın olsun */
   }
 }
