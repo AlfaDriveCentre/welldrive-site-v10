@@ -2,26 +2,24 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>WellDrive | Ana Sayfa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-home">
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container nav-container">
       <a href="index.html" class="brand">
-        <!-- LOGO -->
         <img src="assets/SVG/welldrive-logo.svg" alt="WellDrive" class="brand-logo">
       </a>
 
-      <!-- MOBİL MENÜ BUTONU -->
-      <button id="navToggle" class="nav-toggle" aria-label="Menüyü Aç/Kapat">
+      <button class="nav-toggle" id="navToggle" aria-label="Menüyü aç/kapat">
         <img src="assets/SVG/hammenu-icon.svg" alt="" class="icon icon-menu">
         <img src="assets/SVG/close-icon.svg" alt="" class="icon icon-close">
       </button>
 
-      <!-- ANA MENÜ -->
-      <nav class="site-nav" aria-label="Ana menü">
+      <nav class="site-nav" id="siteNav" aria-label="Ana menü">
         <ul>
           <li><a href="wd750.html">WD750</a></li>
           <li><a href="#wd770">WD770</a></li>
@@ -30,22 +28,21 @@
         </ul>
       </nav>
 
-      <!-- SAĞ AKSİYONLAR -->
       <div class="nav-actions">
-        <button class="icon-button" aria-label="Sitede Ara">
+        <button class="icon-button" aria-label="Sitede ara">
           <img src="assets/SVG/search-icon.svg" alt="" class="icon">
         </button>
-        <button class="language-switch">
-          <img src="assets/SVG/flag-tr-icon.svg" alt="" class="icon-flag">
+        <button class="language-switch" type="button">
+          <img src="assets/SVG/flag-tr-icon.svg" alt="Türkçe" class="icon-flag">
           <span>Türkçe</span>
         </button>
       </div>
     </div>
   </header>
 
-    <main>
-    <!-- HERO (PDF'teki gibi tam merkezde) -->
-    <section class="hero hero-home section">
+  <main>
+    <!-- HERO -->
+    <section class="hero hero-home">
       <div class="container hero-home-inner">
         <h1 class="hero-home-title">WellDrive</h1>
         <h2 class="hero-home-subtitle">
@@ -77,22 +74,21 @@
             src="assets/1x/welldrive-wd750-inverter.png"
             srcset="assets/1x/welldrive-wd750-inverter.png 1x,
                     assets/2x/welldrive-wd750-inverter@2x.png 2x"
-            alt="WellDrive WD750 ve WD770"
+            alt="WellDrive WD750"
             class="hero-home-image">
         </div>
       </div>
     </section>
 
-    <!-- WD750 BÖLÜMÜ (solda metin, ortada akıllı/kompakt görseli, sağda inverter) -->
-    <section class="section product-section product-section-wd750">
+    <!-- WD750 BÖLÜMÜ -->
+    <section class="section product-section product-section-wd750" id="wd750">
       <div class="container product-row">
         <div class="product-text">
           <h2>Kompakt ve Akıllı: WD750</h2>
           <p>
-            Genel maksatlı tüm uygulamalar, ağır hizmet koşulları, geniş haberleşme seçenekleri
-            veya maliyet tasarrufu sağlayacağınız akıllı ve kompakt çözümler için.
+            Genel maksatlı tüm uygulamalar, ağır hizmet koşulları, geniş haberleşme ve kontrol
+            seçenekleri veya maliyet tasarrufu sağlayacağınız akıllı ve kompakt çözümler için.
           </p>
-
           <div class="product-actions">
             <a href="#contact" class="btn btn-primary">Teklif İsteyin</a>
             <a href="wd750.html" class="btn btn-secondary">Detayları Görün</a>
@@ -104,7 +100,7 @@
             src="assets/1x/wd750-all-applications-image.png"
             srcset="assets/1x/wd750-all-applications-image.png 1x,
                     assets/2x/wd750-all-applications-image@2x.png 2x"
-            alt="Akıllı ve kompakt WD750 görseli"
+            alt="WD750 tüm uygulamalar görseli"
             class="product-badge">
         </div>
 
@@ -119,17 +115,15 @@
       </div>
     </section>
 
-    <!-- WD770 BÖLÜMÜ (aynı üç kolonlu yapı) -->
-    <section class="section product-section product-section-wd770">
+    <!-- WD770 BÖLÜMÜ -->
+    <section class="section product-section product-section-wd770" id="wd770">
       <div class="container product-row">
         <div class="product-text">
           <h2>Kusursuz İşlevsellik: WD770</h2>
           <p>
-            Tüm HVAC, AQUA uygulamaları, Master-Slave Çalışma, Ortak DC Bara paylaşımı,
-            genel maksatlı tüm uygulamalar, geniş haberleşme seçenekleri ve
-            mükemmel çözüm sağlayacağınız premium ürünler için.
+            Tüm HVAC, AQUA uygulamaları, master-slave çalışma, ortak DC bara paylaşımı,
+            genel maksatlı tüm uygulamalar ve geniş haberleşme seçenekleri için premium çözüm.
           </p>
-
           <div class="product-actions">
             <a href="#contact" class="btn btn-primary">Teklif İsteyin</a>
             <a href="#wd770" class="btn btn-secondary">Detayları Görün</a>
@@ -141,23 +135,23 @@
             src="assets/1x/heavy-duty-image.png"
             srcset="assets/1x/heavy-duty-image.png 1x,
                     assets/2x/heavy-duty-image@2x.png 2x"
-            alt="HVAC ve AQUA uygulama görseli"
+            alt="Ağır şart ve HVAC uygulama görseli"
             class="product-badge">
         </div>
 
         <div class="product-right">
           <img
-            src="assets/1x/welldrive-wd770-inverter.png"
-            srcset="assets/1x/welldrive-wd770-inverter.png 1x,
-                    assets/2x/welldrive-wd770-inverter@2x.png 2x"
-            alt="WellDrive WD770"
+            src="assets/1x/normal-duty-image.png"
+            srcset="assets/1x/normal-duty-image.png 1x,
+                    assets/2x/normal-duty-image@2x.png 2x"
+            alt="Normal şart uygulama görseli"
             class="product-drive">
         </div>
       </div>
     </section>
 
     <!-- UZMAN EKİP BÖLÜMÜ -->
-    <section class="section support-section">
+    <section class="section support-section" id="support">
       <div class="container support-row">
         <div class="support-text">
           <h2>Uzman Ekip<br>Güçlü Destek</h2>
@@ -167,7 +161,6 @@
             tasarımı, devreye alma işlemleri ve diğer tüm mühendislik hizmetleri için uzman
             ekibimizle temasa geçebilirsiniz.
           </p>
-
           <div class="support-actions">
             <a href="#support" class="btn btn-secondary">Destek Sayfası</a>
             <a href="#contact" class="btn btn-primary">İletişime Geçin</a>
@@ -176,10 +169,10 @@
 
         <div class="support-right">
           <img
-            src="assets/1x/support-team-photo.png"
-            srcset="assets/1x/support-team-photo.png 1x,
-                    assets/2x/support-team-photo@2x.png 2x"
-            alt="WellDrive destek ekibi"
+            src="assets/1x/wd750-family-photo.png"
+            srcset="assets/1x/wd750-family-photo.png 1x,
+                    assets/2x/wd750-family-photo@2x.png 2x"
+            alt="WellDrive ürün ailesi"
             class="support-image">
         </div>
       </div>
@@ -189,7 +182,7 @@
     <div id="contact" class="contact-anchor" aria-hidden="true"></div>
   </main>
 
-  <!-- FOOTER aynı kaldı -->
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-column">
@@ -201,6 +194,7 @@
           <li><a href="#">Site Haritası</a></li>
         </ul>
       </div>
+
       <div class="footer-column">
         <h3>Destek</h3>
         <ul>
@@ -208,6 +202,7 @@
           <li><a href="#">Uygulama Merkezi</a></li>
         </ul>
       </div>
+
       <div class="footer-column">
         <h3>İletişim</h3>
         <ul>
@@ -215,6 +210,7 @@
           <li><a href="#contact">Firmamız Hakkında</a></li>
         </ul>
       </div>
+
       <div class="footer-column">
         <h3>Gizlilik</h3>
         <ul>
@@ -223,16 +219,30 @@
           <li><a href="#">Yasal Bilgiler</a></li>
         </ul>
       </div>
+
       <div class="footer-column">
         <h3>Medya</h3>
         <ul class="social-list">
-          <li><a href="#"><span>alfa-drive-centre</span></a></li>
-          <li><a href="#"><span>alfadrivecentre</span></a></li>
-          <li><a href="#"><span>adcalfadrivecentre</span></a></li>
-          <li><a href="#"><span>alfadrivecentre</span></a></li>
+          <li>
+            <img src="assets/SVG/linkedin-icon.svg" alt="" class="icon-inline">
+            <span>alfa-drive-centre</span>
+          </li>
+          <li>
+            <img src="assets/SVG/instagram-icon.svg" alt="" class="icon-inline">
+            <span>alfadrivecentre</span>
+          </li>
+          <li>
+            <img src="assets/SVG/facebook-icon.svg" alt="" class="icon-inline">
+            <span>adcalfadrivecentre</span>
+          </li>
+          <li>
+            <img src="assets/SVG/youtube-icon.svg" alt="" class="icon-inline">
+            <span>alfadrivecentre</span>
+          </li>
         </ul>
       </div>
     </div>
+
     <div class="footer-bottom">
       <div class="container">
         <p>Telif Hakkı © 2025 - <strong>Alfa Drive Centre</strong>. Tüm hakları saklıdır.</p>
