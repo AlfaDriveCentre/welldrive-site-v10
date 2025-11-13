@@ -1,5 +1,4 @@
-/* RESET & BASE -------------------------------------------------- */
-
+/* RESET ------------------------------------------------------ */
 *,
 *::before,
 *::after {
@@ -15,11 +14,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: #222;
   background: #ffffff;
-  line-height: 1.4;
 }
 
-/* LAYOUT -------------------------------------------------------- */
-
+/* LAYOUT ----------------------------------------------------- */
 .container {
   width: 100%;
   max-width: 1240px;
@@ -27,108 +24,55 @@ body {
   padding: 0 24px;
 }
 
-.section {
-  padding: 56px 0;
-}
-
-.section-alt {
-  background: #fafafa;
-}
-
-/* TYPOGRAPHY ---------------------------------------------------- */
-
-h1, h2, h3 {
-  margin: 0 0 8px;
-  color: #111;
-}
-
-p {
-  margin: 0 0 8px;
-}
-
-.eyebrow {
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: 12px;
-  color: #777;
-  margin-bottom: 6px;
-}
-
-.lead {
-  font-size: 15px;
-  margin-bottom: 10px;
-}
-
-.accent {
-  color: #007bff;
-}
-
-/* BUTTONS ------------------------------------------------------- */
-
-.btn {
-  display: inline-block;
-  padding: 10px 24px;
-  font-size: 14px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  border: 1px solid transparent;
-  cursor: pointer;
-}
-
-.btn-primary {
-  background: #007bff;
-  border-color: #007bff;
-  color: #fff;
-}
-
-.btn-secondary {
-  background: #f4f4f4;
-  border-color: #ccc;
-  color: #222;
-}
-
-/* HEADER -------------------------------------------------------- */
-
+/* HEADER / NAVBAR ------------------------------------------- */
 .site-header {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: #fff;
+  background: #ffffff;
   border-bottom: 1px solid #e5e5e5;
-  padding: 12px 0;
 }
 
 .nav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
+  gap: 24px;
+  height: 64px;
 }
 
 .brand-logo {
   height: 32px;
+  display: block;
+}
+
+/* Masaüstü menü */
+.site-nav {
+  flex: 1 1 auto;
 }
 
 .site-nav ul {
-  display: flex;
-  gap: 28px;
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
 }
 
 .site-nav a {
   text-decoration: none;
-  color: #333;
   font-size: 15px;
   font-weight: 500;
+  color: #333;
+  padding: 4px 0;
 }
 
-.site-nav a.active {
+.site-nav a:hover {
   color: #007bff;
 }
 
+/* Sağ aksiyonlar */
 .nav-actions {
   display: flex;
   align-items: center;
@@ -136,10 +80,13 @@ p {
 }
 
 .icon-button {
-  background: none;
   border: none;
-  padding: 4px;
+  background: none;
+  padding: 4px 6px;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon {
@@ -152,18 +99,59 @@ p {
   height: 18px;
 }
 
-.language-switch {
+/* Dil seçici */
+#langToggle {
+  border-radius: 999px;
+  border: 1px solid #e0e0e0;
+  padding: 4px 10px;
+  background: #fafafa;
+  gap: 6px;
+}
+
+.lang-label {
+  font-size: 14px;
+}
+
+.icon-caret {
+  width: 14px;
+  height: 14px;
+}
+
+/* Dil açılır menü */
+.lang-menu {
+  position: absolute;
+  top: 64px;
+  right: 72px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  padding: 6px 0;
+  min-width: 150px;
+  display: none;
+}
+
+.lang-menu.open {
+  display: block;
+}
+
+.lang-option {
+  width: 100%;
   border: none;
   background: none;
+  padding: 6px 12px;
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   font-size: 14px;
   cursor: pointer;
 }
 
-/* MOBİL NAV ----------------------------------------------------- */
+.lang-option:hover {
+  background: #f5f5f5;
+}
 
+/* Hamburger buton (mobil) */
 .nav-toggle {
   display: none;
   border: none;
@@ -172,361 +160,28 @@ p {
   cursor: pointer;
 }
 
+.icon-menu,
+.icon-close {
+  width: 22px;
+  height: 22px;
+}
+
 .icon-close {
   display: none;
 }
 
-/* HERO HOME ----------------------------------------------------- */
-
-.hero-home {
-  padding-top: 60px;
-  padding-bottom: 40px;
-  text-align: center;
-}
-
-.hero-home-inner {
-  max-width: 720px;
-  margin: 0 auto;
-}
-
-.hero-home-title {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 4px;
-}
-
-.hero-home-subtitle {
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 16px;
-}
-
-.hero-home-text {
-  font-size: 14px;
-  line-height: 1.6;
-  margin-bottom: 6px;
-}
-
-.hero-home-actions {
-  margin-top: 18px;
-}
-
-.hero-home-image-row {
-  margin-top: 30px;
-}
-
-.hero-home-image {
-  max-width: 640px;
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-/* PRODUCT ROWS (WD750 & WD770) --------------------------------- */
-
-.product-row {
-  display: grid;
-  grid-template-columns: 1.8fr 1fr 1fr;
-  align-items: center;
-  column-gap: 40px;
-}
-
-.product-text h2 {
-  font-size: 22px;
-  margin-bottom: 8px;
-}
-
-.product-text p {
-  font-size: 14px;
-  line-height: 1.6;
-  max-width: 380px;
-}
-
-.product-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 12px;
-}
-
-.product-middle {
-  justify-self: center;
-}
-
-.product-right {
-  justify-self: end;
-}
-
-.product-badge {
-  max-width: 240px;
-  width: 100%;
-  height: auto;
-}
-
-.product-drive {
-  max-width: 220px;
-  width: 100%;
-  height: auto;
-}
-
-/* SUPPORT (UZMAN EKİP) ----------------------------------------- */
-
-.support-row {
-  display: grid;
-  grid-template-columns: 1.4fr 1.6fr;
-  align-items: center;
-  column-gap: 40px;
-}
-
-.support-text h2 {
-  font-size: 22px;
-  margin-bottom: 8px;
-}
-
-.support-text p {
-  font-size: 14px;
-  max-width: 450px;
-  line-height: 1.6;
-}
-
-.support-actions {
-  display: flex;
-  gap: 10px;
-  margin-top: 12px;
-}
-
-.support-image {
-  max-width: 520px;
-  width: 100%;
-  height: auto;
-  justify-self: end;
-}
-
-/* WD750 PAGE ---------------------------------------------------- */
-
-.hero-wd750 {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.hero-wd750-inner {
-  display: grid;
-  grid-template-columns: 1.5fr 1.2fr;
-  align-items: center;
-  column-gap: 40px;
-}
-
-.hero-wd750-text h1 {
-  font-size: 28px;
-  margin-bottom: 10px;
-}
-
-.hero-wd750-text p {
-  font-size: 14px;
-  line-height: 1.6;
-}
-
-.hero-wd750-image {
-  max-width: 280px;
-  width: 100%;
-  height: auto;
-  justify-self: center;
-}
-
-/* WD750 – Genel layout blokları -------------------------------- */
-
-.split-grid {
-  display: grid;
-  grid-template-columns: 1.4fr 1.6fr;
-  column-gap: 40px;
-  align-items: center;
-}
-
-.split-vertical {
-  display: grid;
-  grid-template-columns: 1.4fr 1.6fr;
-  column-gap: 40px;
-  align-items: flex-start;
-}
-
-.section-intro {
-  font-size: 14px;
-  margin-bottom: 14px;
-}
-
-.applications-image {
-  max-width: 380px;
-  width: 100%;
-  height: auto;
-}
-
-.feature-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.feature-grid-tight {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.feature-card {
-  background: #fff;
-  border-radius: 8px;
-  border: 1px solid #eee;
-  padding: 16px;
-  font-size: 13px;
-}
-
-.feature-card h3 {
-  font-size: 14px;
-  margin-bottom: 6px;
-}
-
-.feature-icon {
-  width: 32px;
-  height: 32px;
-  margin-bottom: 6px;
-}
-
-.feature-list {
-  padding-left: 18px;
-  font-size: 14px;
-}
-
-.dual-rating-image {
-  max-width: 220px;
-  width: 100%;
-  height: auto;
-  margin-bottom: 16px;
-}
-
-.overload-curve {
-  max-width: 360px;
-  width: 100%;
-  height: auto;
-}
-
-.product-family {
-  max-width: 380px;
-  width: 100%;
-  height: auto;
-}
-
-/* FOOTER -------------------------------------------------------- */
-
-.site-footer {
-  margin-top: 40px;
-  background: #f6f6f6;
-  border-top: 1px solid #dedede;
-  padding: 40px 0 20px;
-  font-size: 13px;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 24px;
-}
-
-.footer-column h3 {
-  font-size: 14px;
-  margin-bottom: 8px;
-}
-
-.footer-column ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.footer-column li {
-  margin-bottom: 6px;
-}
-
-.footer-column a {
-  text-decoration: none;
-  color: #333;
-}
-
-.social-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.social-list li {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-bottom: 6px;
-}
-
-.icon-inline {
-  width: 16px;
-  height: 16px;
-}
-
-.footer-bottom {
-  margin-top: 24px;
-  text-align: center;
-  color: #777;
-}
-
-/* CONTACT ANCHOR ----------------------------------------------- */
-
-.contact-anchor {
-  height: 1px;
-}
-
-/* RESPONSIVE ---------------------------------------------------- */
-
-@media (max-width: 1024px) {
-  .site-nav ul {
-    gap: 18px;
-  }
-
-  .product-row,
-  .support-row,
-  .hero-wd750-inner,
-  .split-grid,
-  .split-vertical {
-    grid-template-columns: 1fr;
-    row-gap: 24px;
-    text-align: center;
-  }
-
-  .product-right,
-  .product-middle,
-  .support-image,
-  .hero-wd750-image {
-    justify-self: center;
-  }
-
-  .feature-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .feature-grid-tight {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .footer-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 768px) {
-  .nav-toggle {
-    display: block;
+/* MOBİL ------------------------------------------------------ */
+@media (max-width: 900px) {
+  .nav-container {
+    height: 60px;
   }
 
   .site-nav {
     position: absolute;
-    inset: 56px 0 auto 0;
-    background: #fff;
+    left: 0;
+    right: 0;
+    top: 60px;
+    background: #ffffff;
     border-bottom: 1px solid #e5e5e5;
     transform: translateY(-120%);
     transition: transform 0.25s ease;
@@ -534,15 +189,32 @@ p {
 
   .site-nav ul {
     flex-direction: column;
-    padding: 12px 24px 16px;
+    align-items: flex-start;
+    gap: 0;
+    padding: 8px 24px 12px;
   }
 
-  body.nav-open .site-nav {
-    transform: translateY(0);
+  .site-nav li {
+    width: 100%;
+  }
+
+  .site-nav a {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
   }
 
   .nav-actions {
-    display: none;
+    margin-left: auto;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  /* Mobilde nav açıkken */
+  body.nav-open .site-nav {
+    transform: translateY(0);
   }
 
   body.nav-open .icon-menu {
@@ -550,28 +222,27 @@ p {
   }
 
   body.nav-open .icon-close {
-    display: inline-block;
+    display: block;
   }
 
-  .footer-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  /* Dil menüsünü nav içine taşıyormuş gibi görünmesi için konumu biraz değiştir */
+  .lang-menu {
+    top: 60px;
+    right: 24px;
   }
 }
 
+/* Daha küçük ekranlarda aksiyonları sadeleştir */
 @media (max-width: 600px) {
   .container {
     padding: 0 16px;
   }
 
-  .hero-home-title {
-    font-size: 26px;
+  .nav-actions {
+    gap: 6px;
   }
 
-  .hero-home-subtitle {
-    font-size: 16px;
-  }
-
-  .footer-grid {
-    grid-template-columns: 1fr;
+  #langToggle .lang-label {
+    display: none;
   }
 }
