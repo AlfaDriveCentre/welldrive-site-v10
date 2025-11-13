@@ -462,13 +462,10 @@ h3 {
   word-break: break-all;
 }
 
-/* JS olsa da olmasa da içerik her zaman görünsün */
 .reveal {
   opacity: 1;
   transform: none;
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
-
 .reveal.visible {
   opacity: 1;
   transform: none;
