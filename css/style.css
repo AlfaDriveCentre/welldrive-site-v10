@@ -593,3 +593,36 @@ h3 {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+/* --- GEÇİCİ DİAGNOSTİK OVERRIDE --- */
+/* Tüm ana içerik bloklarını her koşulda görünür yap */
+
+main {
+  display: block !important;
+}
+
+.hero,
+.section,
+.product-section,
+.support-section {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+
+/* reveal animasyonunu tamamen pasif et */
+.reveal {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.reveal.visible {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Her ihtimale karşı metin rengi */
+body {
+  color: #222 !important;
+}
