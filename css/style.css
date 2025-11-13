@@ -462,7 +462,7 @@ h3 {
   word-break: break-all;
 }
 
-/* JS çalışmasa bile içerik her zaman görünsün */
+/* reveal: JS olmasa bile içerik her zaman görünür olsun */
 .reveal {
   opacity: 1 !important;
   transform: none !important;
