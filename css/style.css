@@ -31,6 +31,9 @@ body {
   z-index: 50;
   background: #ffffff;
   border-bottom: 1px solid #e5e5e5;
+  /* iOS safe-area için üst padding */
+  padding-top: constant(safe-area-inset-top, 0px);
+  padding-top: env(safe-area-inset-top, 0px);
 }
 
 .nav-container {
@@ -187,13 +190,16 @@ body {
 @media (max-width: 900px) {
   .nav-container {
     height: 60px;
+    padding-top: 4px;  /* üstten biraz boşluk */
+    padding-bottom: 4px;
   }
 
   .site-nav {
     position: absolute;
     left: 0;
     right: 0;
-    top: 60px;
+    top: calc(60px + env(safe-area-inset-top, 0px));
+    top: calc(60px + constant(safe-area-inset-top, 0px));
     background: #ffffff;
     border-bottom: 1px solid #e5e5e5;
     transform: translateY(-120%);
@@ -256,6 +262,6 @@ body {
   }
 
   .lang-label {
-    display: none; /* PDF mobilde sadece ikon+bayrak tarzı görünüme yakın olsun */
+    display: none; /* mobilde ikon + bayrak ağırlıklı görünüm */
   }
 }
