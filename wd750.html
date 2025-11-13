@@ -3,111 +3,244 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>WD750 – Kompakt ve Akıllı</title>
-  <meta name="description" content="WellDrive WD750: Genel maksatlı uygulamalar için kompakt, akıllı ve dayanıklı frekans konvertörü.">
+  <title>WD750 – Kompakt ve Akıllı Frekans Konvertörü</title>
+  <meta
+    name="description"
+    content="WellDrive WD750: Genel maksatlı uygulamalar için kompakt, akıllı ve dayanıklı frekans konvertörü."
+  />
   <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <body>
   <header class="navbar">
     <div class="container navbar-inner">
-      <div class="brand"><a href="/" style="text-decoration:none;color:inherit">WellDrive</a></div>
-      <nav class="nav">
+      <div class="brand">
+        <img
+          src="/assets/1x/welldrive-logo.png"
+          srcset="/assets/2x/welldrive-logo@2x.png 2x"
+          alt="WellDrive logo"
+          class="brand-logo"
+        />
+        <a href="/">WellDrive</a>
+      </div>
+      <nav class="nav" id="main-nav">
         <a href="/wd750.html">WD750</a>
         <a href="/#wd770">WD770</a>
         <a href="/#support">Destek</a>
         <a href="/#contact">İletişim</a>
       </nav>
-      <button class="burger" onclick="document.querySelector('.nav').style.display = (getComputedStyle(document.querySelector('.nav')).display==='none'?'flex':'none')">☰</button>
+      <button class="burger" type="button" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
   <main>
+    <!-- HERO -->
     <section class="hero">
       <div class="container">
         <div class="grid">
           <div>
             <h1>WD750 – Kompakt ve Akıllı</h1>
-            <p class="lead">Ağır hizmet koşulları, geniş haberleşme seçenekleri ve ekonomiyi bir araya getiren çözüm.</p>
-            <div class="badges"><span class="badge">AKILLI</span><span class="badge">KOMPAKT</span></div>
-            <div class="cta"><a class="button primary" href="/#contact">Teklif İsteyin</a><a class="button" href="#downloads">Kılavuzlar</a></div>
+            <p class="lead">
+              Ağır hizmet koşulları, geniş haberleşme seçenekleri ve kompakt
+              gövde yapısı ile pompa, fan ve genel endüstri uygulamalarında
+              maksimum esneklik sağlar.
+            </p>
+            <div class="badges">
+              <span class="badge">AKILLI</span>
+              <span class="badge">KOMPAKT</span>
+            </div>
+            <div class="cta">
+              <a class="button primary" href="/#contact">Teklif İsteyin</a>
+              <a class="button" href="#downloads">Kılavuzlar</a>
+            </div>
           </div>
           <figure class="figure">
-            
-<picture>
-  <source type="image/webp" srcset="/assets/96ppi/welldrive-wd750-inverter.webp, /assets/96ppi/welldrive-wd750-inverter@2x.webp 2x">
-  <source type="image/svg+xml" srcset="/assets/SVG/welldrive-wd750-inverter.svg">
-  <img loading="lazy" decoding="async" src="/assets/1x/welldrive-wd750-inverter.png" srcset="/assets/2x/welldrive-wd750-inverter@2x.png 2x" alt="WD750 Packshot" style="width:100%;height:auto;">
-</picture>
+            <img
+              src="/assets/1x/welldrive-wd750-inverter.png"
+              srcset="/assets/2x/welldrive-wd750-inverter@2x.png 2x"
+              alt="WD750 sürücü"
+            />
           </figure>
         </div>
       </div>
     </section>
 
+    <!-- ÖZELLİKLER -->
     <section class="section">
       <div class="container">
         <div class="split">
           <div>
             <h2>Öne Çıkan Özellikler</h2>
+            <p class="sub">
+              WD750, kompakt gövdesine rağmen gelişmiş kontrol algoritmaları ve
+              zengin I/O seçenekleri ile hem enerji verimliliği hem de devreye
+              alma kolaylığı sunar.
+            </p>
             <ul>
-              <li>Kompakt gövde, geniş güç aralığı.</li>
-              <li>V/F ve Sensorless Vector kontrol.</li>
-              <li>Çoklu-Pompa, master–slave, uyku/uyandırma.</li>
-              <li>Modbus/RTU standart; Profinet/Profibus/CAN (opsiyon).</li>
-              <li>STO ve fren kıyıcı opsiyonları.</li>
+              <li>
+                Kompakt ve hafif tasarım, pano içinde minimum yer ihtiyacı.
+              </li>
+              <li>V/F ve Sensorless Vector (SLV) kontrol modları.</li>
+              <li>
+                Çoklu-Pompa, master–slave ve uyku/uyandırma fonksiyonları.
+              </li>
+              <li>
+                Modbus/RTU standart, Profibus/Profinet/CAN gibi opsiyonel
+                fieldbus kartları.
+              </li>
+              <li>
+                STO, dahili fren kıyıcı ve gelişmiş motor koruma fonksiyonları.
+              </li>
             </ul>
-            <div class="cta" style="margin-top:10px"><a class="button" href="#specs">Teknik Özellikler</a></div>
           </div>
           <figure class="figure">
-            
-<picture>
-  <source type="image/webp" srcset="/assets/96ppi/wd750-all-applications-image.webp, /assets/96ppi/wd750-all-applications-image@2x.webp 2x">
-  <source type="image/svg+xml" srcset="/assets/SVG/wd750-all-applications-image.svg">
-  <img loading="lazy" decoding="async" src="/assets/1x/wd750-all-applications-image.png" srcset="/assets/2x/wd750-all-applications-image@2x.png 2x" alt="WD750 Uygulama Görseli" style="width:100%;height:auto;">
-</picture>
+            <img
+              src="/assets/1x/wd750-all-applications-image.png"
+              srcset="/assets/2x/wd750-all-applications-image@2x.png 2x"
+              alt="WD750 tüm uygulamalar görseli"
+            />
           </figure>
         </div>
       </div>
     </section>
 
+    <!-- TEKNİK TABLO (örnek şablon) -->
     <section id="specs" class="section">
       <div class="container">
-        <h2>Teknik Özellikler (Şablon)</h2>
-        <p class="sub">Kendi tablo verilerinle güncellenecek örnek yapı.</p>
-        <div class="figure" style="padding:16px">
-          <table style="width:100%; border-collapse:collapse">
+        <h2>Teknik Özellikler (Örnek Şablon)</h2>
+        <p class="sub">
+          Gerçek katalog değerlerini daha sonra buradaki tabloya
+          aktarabilirsiniz.
+        </p>
+        <div class="figure" style="padding: 16px">
+          <table
+            style="
+              width: 100%;
+              border-collapse: collapse;
+              font-size: 14px;
+            "
+          >
             <thead>
-              <tr><th style="text-align:left;border-bottom:1px solid #eee;padding:8px">Parametre</th><th style="text-align:left;border-bottom:1px solid #eee;padding:8px">Değer</th></tr>
+              <tr>
+                <th
+                  style="
+                    text-align: left;
+                    border-bottom: 1px solid #e5e7eb;
+                    padding: 8px;
+                  "
+                >
+                  Parametre
+                </th>
+                <th
+                  style="
+                    text-align: left;
+                    border-bottom: 1px solid #e5e7eb;
+                    padding: 8px;
+                  "
+                >
+                  Değer
+                </th>
+              </tr>
             </thead>
             <tbody>
-              <tr><td style="padding:8px;border-bottom:1px solid #f2f2f2">Giriş Gerilimi</td><td style="padding:8px;border-bottom:1px solid #f2f2f2">3~ 380–480 VAC</td></tr>
-              <tr><td style="padding:8px;border-bottom:1px solid #f2f2f2">Güç Aralığı</td><td style="padding:8px;border-bottom:1px solid #f2f2f2">0.75–800 kW*</td></tr>
-              <tr><td style="padding:8px;border-bottom:1px solid #f2f2f2">Kontrol Modu</td><td style="padding:8px;border-bottom:1px solid #f2f2f2">V/F, SLV</td></tr>
-              <tr><td style="padding:8px;border-bottom:1px solid #f2f2f2">Koruma</td><td style="padding:8px;border-bottom:1px solid #f2f2f2">OT, OC, OV, UV, STO (ops.)</td></tr>
+              <tr>
+                <td
+                  style="
+                    padding: 8px;
+                    border-bottom: 1px solid #f3f4f6;
+                  "
+                >
+                  Giriş Gerilimi
+                </td>
+                <td
+                  style="
+                    padding: 8px;
+                    border-bottom: 1px solid #f3f4f6;
+                  "
+                >
+                  3~ 380–480 VAC
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="
+                    padding: 8px;
+                    border-bottom: 1px solid #f3f4f6;
+                  "
+                >
+                  Güç Aralığı
+                </td>
+                <td
+                  style="
+                    padding: 8px;
+                    border-bottom: 1px solid #f3f4f6;
+                  "
+                >
+                  0.75–800 kW*
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="
+                    padding: 8px;
+                    border-bottom: 1px solid #f3f4f6;
+                  "
+                >
+                  Kontrol Modu
+                </td>
+                <td
+                  style="
+                    padding: 8px;
+                    border-bottom: 1px solid #f3f4f6;
+                  "
+                >
+                  V/F, Sensorless Vector
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="
+                    padding: 8px;
+                    border-bottom: 1px solid #f3f4f6;
+                  "
+                >
+                  Koruma Fonksiyonları
+                </td>
+                <td
+                  style="
+                    padding: 8px;
+                    border-bottom: 1px solid #f3f4f6;
+                  "
+                >
+                  OT, OC, OV, UV, kısa devre, STO (ops.)
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>
       </div>
     </section>
 
+    <!-- İNDİRMELER -->
     <section id="downloads" class="band">
       <div class="container">
         <div class="grid">
           <div>
             <h2>İndirmeler</h2>
-            <p class="sub">Kullanım kılavuzu, katalog, uygulama notları.</p>
-            <ul>
-              <li><a class="button" href="#">Kullanım Kılavuzu (PDF)</a></li>
-              <li><a class="button" href="#">Katalog (PDF)</a></li>
-              <li><a class="button" href="#">Uygulama Notları (PDF)</a></li>
-            </ul>
+            <p class="sub">Kullanım kılavuzu, katalog ve uygulama notları.</p>
+            <div class="cta">
+              <a class="button" href="#">Kullanım Kılavuzu (PDF)</a>
+              <a class="button" href="#">Katalog (PDF)</a>
+              <a class="button" href="#">Uygulama Notları (PDF)</a>
+            </div>
           </div>
           <figure class="figure">
-            
-<picture>
-  <source type="image/webp" srcset="/assets/96ppi/wd750-family-photo.webp, /assets/96ppi/wd750-family-photo@2x.webp 2x">
-  <source type="image/svg+xml" srcset="/assets/SVG/wd750-family-photo.svg">
-  <img loading="lazy" decoding="async" src="/assets/1x/wd750-family-photo.png" srcset="/assets/2x/wd750-family-photo@2x.png 2x" alt="WD750 Aile Görseli" style="width:100%;height:auto;">
-</picture>
+            <img
+              src="/assets/1x/wd750-family-photo.png"
+              srcset="/assets/2x/wd750-family-photo@2x.png 2x"
+              alt="WD750 aile görseli"
+            />
           </figure>
         </div>
       </div>
@@ -115,7 +248,9 @@
   </main>
 
   <footer>
-    <div class="container footer-note">Telif Hakkı © 2025 – Alfa Drive Centre.</div>
+    <div class="container footer-note">
+      Telif Hakkı © 2025 – Alfa Drive Centre. Tüm hakları saklıdır.
+    </div>
   </footer>
 
   <script src="/js/main.js"></script>
