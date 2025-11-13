@@ -228,6 +228,54 @@ h3 {
   color: #e00000;
 }
 
+/* ANA SAYFA HERO (PDF ile uyumlu) */
+.hero-home {
+  padding-top: 72px;
+  padding-bottom: 64px;
+}
+
+.hero-home-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-home-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+
+.hero-home-subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 16px;
+}
+
+.hero-home-text {
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0 0 6px;
+}
+
+.hero-home-actions {
+  margin-top: 18px;
+}
+
+.hero-home-image-row {
+  margin-top: 32px;
+}
+
+.hero-home-image {
+  max-width: 640px;
+  margin: 0 auto;
+  display: block;
+}
+
+
+
+
+
 /* Buttons */
 .btn {
   display: inline-flex;
